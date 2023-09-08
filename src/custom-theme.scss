@@ -1,0 +1,106 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '~@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+//$template-primary: mat.define-palette(mat.$indigo-palette);
+
+//criando paleta de cores
+$maxima-paleta-primary: (
+    50 : #e0e6eb,
+    100 : #b3c1ce,
+    200 : #8098ad,
+    300 : #4d6e8c,
+    400 : #264f74,
+    500 : #00305b,
+    600 : #002b53,
+    700 : #002449,
+    800 : #001e40,
+    900 : #00132f,
+    A100 : #6892ff,
+    A200 : #356eff,
+    A400 : #0249ff,
+    A700 : #0041e7,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #c6c6c6,
+        400 : #c6c6c6,
+        500 : #c6c6c6,
+        600 : #c6c6c6,
+        700 : #c6c6c6,
+        800 : #c6c6c6,
+        900 : #c6c6c6,
+        A100 : #000000,
+        A200 : #c6c6c6,
+        A400 : #c6c6c6,
+        A700 : #c6c6c6,
+    )
+);
+
+$maxima-paleta-accent: (
+    50 : #f8f8f8,
+    100 : #eeeeee,
+    200 : #e3e3e3,
+    300 : #d7d7d7,
+    400 : #cfcfcf,
+    500 : #c6c6c6,
+    600 : #c0c0c0,
+    700 : #b9b9b9,
+    800 : #b1b1b1,
+    900 : #a4a4a4,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffebeb,
+    A700 : #ffd1d1,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+$template-primary: mat.define-palette($maxima-paleta-primary);
+$template-accent: mat.define-palette($maxima-paleta-accent);
+
+// The warn palette is optional (defaults to red).
+$template-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$template-theme: mat.define-light-theme((
+  color: (
+    primary: $template-primary,
+    accent: $template-accent,
+    warn: $template-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($template-theme);
+

@@ -1,0 +1,118 @@
+tr.mat-footer-row {
+    font-weight: bold;
+  }
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  tr:not(.example-expanded-row):hover {
+    background: rgba(220, 230, 235, 0.952);
+  }
+
+  .input-outros-valores{
+    width: 6rem !important;
+  }
+
+  th.mat-header-cell {
+    padding-right: 10px !important;
+    text-align: center;
+  }
+
+  .mat-input-element:disabled{
+    color: black;
+  }
+
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+
+  .stylePrazo {
+    width: 80px;
+    height: 68px;
+  }
+
+  .styleValor {
+    width: 200px;
+    text-align: right;
+    height: 68px;
+  }
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.75em 0 0.75em 0 !important;
+    top: -0.25em;
+  }
+
+.margem-total-w {
+    width: 25%;
+ }
+
+ .destaque {
+  background-color: rgba(220, 230, 235, 0.952)
+}
+
+td {
+  padding-right: 10px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+ }
+
+ .table-container {
+   overflow: auto;
+ }
+
+ table {
+  min-width: 2143px;
+   table-layout: fixed;
+   width: -webkit-fill-available;
+   text-align: center;
+ }
+
+ .mat-raised-button {
+   width: 120px;
+ }
+
+ .btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  width: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  width: 20px;
+}
+
+.btn-dadoscomplemntares {
+  color: #fff;
+  width: 20px;
+}
+
+.mat-raised-button {
+  width: 120px;
+  height: 36px;
+ }
+
+ .min-button{
+   width: 40px !important;
+ }
+
+ .erro-class{
+  color: #a94442;
+ }
+
+ ::ng-deep .tooltip {
+  font-size: 15px;
+}
